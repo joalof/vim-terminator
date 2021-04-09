@@ -343,6 +343,8 @@ function! terminator#run_file_in_output_buffer(cmd) abort
         let g:terminator_running_job = job_start(cmd, {
                     \ 'out_io': "buffer",
                     \ 'out_buf': s:output_buf_num,
+                    \ 'err_io': "buffer",
+                    \ 'err_buf': s:output_buf_num,
                     \ 'err_cb': function('terminator#vim_on_error'),
                     \ 'exit_cb': function('terminator#vim_on_exit'),
                     \ })

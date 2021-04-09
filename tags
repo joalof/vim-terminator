@@ -1,0 +1,77 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/e72a1491/
+<leader>or	plugin/terminator.vim	/^    nnoremap <silent> <leader>or :TerminatorStartREPL <CR>$/;"	m
+<leader>ot	plugin/terminator.vim	/^    nnoremap <silent> <leader>ot :TerminatorOpenTerminal <CR>$/;"	m
+<leader>rf	plugin/terminator.vim	/^    nnoremap <silent> <leader>rf :TerminatorRunFileInOutputBuffer <CR>$/;"	m
+<leader>rf	plugin/terminator.vim	/^    vnoremap <silent> <leader>rf :TerminatorRunPartOfFileInOutputBuffer<CR>$/;"	m
+<leader>rm	plugin/terminator.vim	/^    nnoremap <leader>rm :TerminatorRunAltCmd <C-R>=terminator#get_run_cmd(fnameescape(expand("%"/;"	m
+<leader>rs	plugin/terminator.vim	/^    nnoremap <silent> <leader>rs :TerminatorStopRun <CR>$/;"	m
+<leader>rt	plugin/terminator.vim	/^    nnoremap <silent> <leader>rt :TerminatorRunFileInTerminal <CR>$/;"	m
+<leader>rt	plugin/terminator.vim	/^    vnoremap <silent> <leader>rt :TerminatorRunPartOfFileInTerminal<CR>$/;"	m
+<leader>sd	plugin/terminator.vim	/^    nnoremap <silent> <leader>sd :TerminatorSendDelimiterToTerminal<CR>$/;"	m
+<leader>ss	plugin/terminator.vim	/^    vnoremap <silent> <leader>ss :TerminatorSendSelectionToTerminal<CR>$/;"	m
+About	README.md	/^# About$/;"	c
+Demo	README.md	/^# Demo$/;"	c
+EOF	test/test.sh	/^jq '.' <<EOF$/;"	h
+Extensibility	README.md	/^# Extensibility$/;"	c
+FAQ	README.md	/^# FAQ$/;"	c
+Installation	README.md	/^# Installation$/;"	c
+Managing window splits	README.md	/^## Managing window splits$/;"	s
+REPL delimiters	README.md	/^## REPL delimiters$/;"	s
+TerminatorOpenTerminal	plugin/terminator.vim	/^command! TerminatorOpenTerminal call terminator#open_terminal()$/;"	c
+TerminatorRunAltCmd	plugin/terminator.vim	/^command! -nargs=+ TerminatorRunAltCmd call terminator#run_file_in_output_buffer(<q-args>)$/;"	c
+TerminatorRunFileInOutputBuffer	plugin/terminator.vim	/^command! TerminatorRunFileInOutputBuffer call terminator#run_file("output_buffer", expand("%"))$/;"	c
+TerminatorRunFileInTerminal	plugin/terminator.vim	/^command! TerminatorRunFileInTerminal call terminator#run_file("terminal", expand("%"))$/;"	c
+TerminatorRunPartOfFileInOutputBuffer	plugin/terminator.vim	/^command! -range TerminatorRunPartOfFileInOutputBuffer call terminator#run_part_of_file("output_b/;"	c
+TerminatorRunPartOfFileInTerminal	plugin/terminator.vim	/^command! -range TerminatorRunPartOfFileInTerminal call terminator#run_part_of_file("terminal", t/;"	c
+TerminatorSendDelimiterToTerminal	plugin/terminator.vim	/^command! TerminatorSendDelimiterToTerminal call terminator#send_delimiter_to_terminal()$/;"	c
+TerminatorSendSelectionToTerminal	plugin/terminator.vim	/^command! -range TerminatorSendSelectionToTerminal call terminator#send_to_terminal(terminator#ge/;"	c
+TerminatorSendToTerminal	plugin/terminator.vim	/^command! -nargs=+ TerminatorSendToTerminal call terminator#send_to_terminal(<q-args> . "\\n")$/;"	c
+TerminatorStartREPL	plugin/terminator.vim	/^command! TerminatorStartREPL call terminator#start_repl()$/;"	c
+TerminatorStopRun	plugin/terminator.vim	/^command! TerminatorStopRun call terminator#stop_running_job()$/;"	c
+Usage	README.md	/^# Usage$/;"	c
+echoerr	test/test.sh	/^echoerr() { echo "$@" 1>&2; }$/;"	f
+g:terminator_autoloaded	autoload/terminator.vim	/^let g:terminator_autoloaded = 1$/;"	v
+g:terminator_loaded	plugin/terminator.vim	/^let g:terminator_loaded = 1$/;"	v
+g:terminator_running_job	autoload/terminator.vim	/^        let g:terminator_running_job = job_start(cmd, {$/;"	v
+g:terminator_running_job	autoload/terminator.vim	/^        let g:terminator_running_job = jobstart(cmd, {$/;"	v
+i	test/test.ts	/^var i: number;$/;"	v
+main	test/test.c	/^int main() {$/;"	f	typeref:typename:int	signature:()
+message	test/test.ts	/^let message: string = 'Hello, World!';$/;"	v
+s:terminator_repl_command	autoload/terminator.vim	/^    let s:terminator_repl_command = extend(s:terminator_repl_command, g:terminator_repl_command)$/;"	v
+s:terminator_repl_command	autoload/terminator.vim	/^let s:terminator_repl_command = {$/;"	v
+s:terminator_repl_delimiter_regex	autoload/terminator.vim	/^    let s:terminator_repl_delimiter_regex = 'In\\[.*\\]:'$/;"	v
+s:terminator_repl_delimiter_regex	autoload/terminator.vim	/^    let s:terminator_repl_delimiter_regex = g:terminator_repl_delimiter_regex$/;"	v
+s:terminator_runfile_map	autoload/terminator.vim	/^    let s:terminator_runfile_map = extend(s:terminator_runfile_map, g:terminator_runfile_map)$/;"	v
+s:terminator_runfile_map	autoload/terminator.vim	/^let s:terminator_runfile_map = {$/;"	v
+s:terminator_split_fraction	autoload/terminator.vim	/^    let s:terminator_split_fraction = 0.3819660113000001$/;"	v
+s:terminator_split_fraction	autoload/terminator.vim	/^    let s:terminator_split_fraction = g:terminator_split_fraction$/;"	v
+s:terminator_split_location	autoload/terminator.vim	/^    let s:terminator_split_location = 'botright'$/;"	v
+s:terminator_split_location	autoload/terminator.vim	/^    let s:terminator_split_location = g:terminator_split_location$/;"	v
+s:terminator_terminal_buffer_name_regex	autoload/terminator.vim	/^let s:terminator_terminal_buffer_name_regex = '\\(^term:\/\/\\|\\[Terminal\\]\\|\\[running\\]\\|/;"	v
+terminator#get_filetype_comment	autoload/terminator.vim	/^function terminator#get_filetype_comment() abort$/;"	f
+terminator#get_in_delimiter	autoload/terminator.vim	/^function terminator#get_in_delimiter()$/;"	f
+terminator#get_output_buffer	autoload/terminator.vim	/^function terminator#get_output_buffer(cmd) abort$/;"	f
+terminator#get_run_cmd	autoload/terminator.vim	/^function terminator#get_run_cmd(filename)$/;"	f
+terminator#get_visual_selection	autoload/terminator.vim	/^function! terminator#get_visual_selection() range$/;"	f
+terminator#nvim_on_event	autoload/terminator.vim	/^function terminator#nvim_on_event(job_id, data, event) dict$/;"	f
+terminator#open_new_output_buffer	autoload/terminator.vim	/^function terminator#open_new_output_buffer()$/;"	f
+terminator#open_terminal	autoload/terminator.vim	/^function terminator#open_terminal() abort$/;"	f
+terminator#resize_window	autoload/terminator.vim	/^function terminator#resize_window()$/;"	f
+terminator#run_file	autoload/terminator.vim	/^function terminator#run_file(output_location, filename) abort$/;"	f
+terminator#run_file_in_output_buffer	autoload/terminator.vim	/^function! terminator#run_file_in_output_buffer(cmd) abort$/;"	f
+terminator#run_part_of_file	autoload/terminator.vim	/^function terminator#run_part_of_file(output_location, register) abort$/;"	f
+terminator#send_delimiter_to_terminal	autoload/terminator.vim	/^function terminator#send_delimiter_to_terminal()$/;"	f
+terminator#send_to_terminal	autoload/terminator.vim	/^function terminator#send_to_terminal(contents) abort$/;"	f
+terminator#shrink_output_buffer	autoload/terminator.vim	/^function terminator#shrink_output_buffer()$/;"	f
+terminator#start_repl	autoload/terminator.vim	/^function terminator#start_repl() abort$/;"	f
+terminator#stop_running_job	autoload/terminator.vim	/^function terminator#stop_running_job()$/;"	f
+terminator#substitute_command_variables	autoload/terminator.vim	/^function terminator#substitute_command_variables(command, filename)$/;"	f
+terminator#vim_on_error	autoload/terminator.vim	/^function terminator#vim_on_error(channel, data)$/;"	f
+terminator#vim_on_exit	autoload/terminator.vim	/^function terminator#vim_on_exit(channel, data)$/;"	f
